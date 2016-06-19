@@ -9,7 +9,7 @@ export default class LandingPage extends React.Component {
       <div className="container">
         <div className="header">Header</div>
         <div className="content">Content</div>
-        <MusicWidget url={'http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=jonnydoesmusic&api_key=' + keys.apikeys.lastfm} pollInterval={2000}/>
+      <MusicWidget url={'http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=jonnydoesmusic&format=json&api_key=' + keys.apikeys.lastfm}/>
         <div className="footer">Footer</div>
       </div>
     );
