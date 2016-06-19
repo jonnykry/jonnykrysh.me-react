@@ -1,5 +1,7 @@
 import React from 'react';
 
+import '!style!css!sass!./MusicWidget.scss';
+
 export default class MusicWidget extends React.Component {
   constructor() {
     super();
