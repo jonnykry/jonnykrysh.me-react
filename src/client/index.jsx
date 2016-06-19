@@ -1,11 +1,11 @@
 import React from 'react';
 import { render } from 'react-dom';
 
-import LandingPage from './components/LandingPage.jsx';
+import LandingContainer from './components/LandingContainer.jsx';
 
 class App extends React.Component {
   render () {
-    return <LandingPage />;
+    return <LandingContainer />;
   }
 }
 

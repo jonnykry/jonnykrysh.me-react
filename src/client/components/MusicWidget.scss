@@ -1,5 +1,102 @@
 
-.music-widget {
+// Shared widget styling
+
+.music-widget, .music-widget-shrunk {
+  background: rgba(0,0,0, 0.8);
   color: #FFF;
-  background-color: rgba(0, 0, 0, 0.7);
+  padding: 0.3rem;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  border-radius: 15px;
+  border-bottom: none;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  margin: 0 1rem;
+  z-index: 9998!important;
+  text-align: center;
+
+  .music-widget-toggle {
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .music-widget-content {
+    &:hover {
+      cursor: pointer;
+    }
+
+    .track-song {
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .track-album {
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}
+
+// Expanded widget
+
+.music-widget {
+  width: 25rem;
+
+  .music-widget-content {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+
+    .track-art {
+      text-align: center;
+    }
+
+    .track-info {
+      display: flex;
+      flex-direction: row;
+      overflow: hidden;
+      padding-top: 1rem;
+    }
+
+    p {
+      height: 1.5rem;
+      margin: 5px 10px;
+      white-space: nowrap;
+    }
+  }
+}
+
+// Collapsed widget
+
+.music-widget-shrunk {
+  height: 3.5rem;
+  width: 25rem;
+  font-size: 0.8rem;
+
+  .music-widget-content {
+    display: flex;
+    flex-direction: row;
+    padding: 0 0.5rem;
+    overflow: hidden;
+
+    .track-art {
+      img {
+        padding-top: 0.2rem;
+      }
+    }
+
+    .track-info {
+      display: flex;
+      flex-direction: row;
+      overflow: hidden;
+
+      p {
+        padding-left: 0.5rem;
+        white-space: nowrap;
+      }
+    }
+  }
 }
