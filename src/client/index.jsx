@@ -1,11 +1,11 @@
 import React from 'react';
 import { render } from 'react-dom';
 
-import LandingContainer from './components/LandingContainer.jsx';
+import Main from './components/Main.jsx';
 
 class App extends React.Component {
   render () {
-    return <LandingContainer />;
+    return <Main />;
   }
 }
 
